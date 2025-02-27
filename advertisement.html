@@ -2,102 +2,159 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fast Food Delivery in Navi Mumbai</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Poppins', sans-serif;
-            background-color: #0a3d62;
-            text-align: center;
-            padding: 20px;
-            color: #f1f1f1;
-        }
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 40px;
-            background: linear-gradient(135deg, #1e3799, #3c6382);
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
-            border-radius: 20px;
-            animation: fadeIn 1.2s ease-in-out;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        h1 {
-            color: #60a3bc;
-            margin-bottom: 20px;
-            font-size: 36px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-        }
-        p {
-            color: #d1d8e0;
-            font-size: 18px;
-            margin-bottom: 40px;
-            line-height: 1.8;
-        }
-        .btn {
-            padding: 14px 40px;
-            background: #60a3bc;
-            color: #ffffff;
-            text-decoration: none;
-            border-radius: 30px;
-            font-weight: 600;
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-            transition: 0.4s ease;
-            letter-spacing: 1px;
-        }
-        .btn:hover {
-            background: #3c6382;
-            transform: translateY(-5px);
-            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
-        }
-        .image {
-            width: 100%;
-            border-radius: 15px;
-            margin-bottom: 30px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-        }
-        .navbar a {
-            color: #f1f1f1;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: 600;
-            text-transform: uppercase;
-            transition: color 0.3s ease;
-        }
-        .navbar a:hover, .navbar a.active {
-            color: #60a3bc;
-            text-decoration: underline;
-        }
-        .logo img {
-            width: 150px;
-            margin-bottom: 20px;
-        }
-    </style>
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Reviews | Nizami Sevindi</title>
 </head>
 <body>
-    <div class="container">
+
+    <!-------------------------------------------- HEADER SECTION -->
+    <header class="header" >
         <a href="#" class="logo">
             <img src="./image/pngegg.png" alt="logo">
         </a>
         <nav class="navbar">
-            <a href="./index.html">Home</a>
-            <a href="./about.html">About</a>
-            <a href="./menu.html">Menu</a>
-            <a href="./products.html">Products</a>
-            <a href="./review.html" class="active">Review</a>
-            <a href="./contact.html">Contact</a>
-            <a href="./blog.html">Blog</a>
+            <a href="./index.html">home</a>
+            <a href="./about.html">about</a>
+            <a href="./menu.html" >menu</a>
+            <a href="./products.html" >products</a>
+            <a href="./review.html" class="active">review</a>
+            <a href="./contact.html">contact</a>
+            <a href="./blog.html">blog</a>
+            <a href="./advertisement.html">offers</a>
         </nav>
-        <img src="https://source.unsplash.com/800x400/?fastfood,burger" alt="Fast Food" class="image">
-        <h1>Craving Fast Food in Navi Mumbai?</h1>
-        <p>Delicious burgers, fries, pizzas, and more — delivered hot and fresh right to your doorstep in no time!</p>
-        <a href="#" class="btn">Order Now</a>
+        <div class="buttons">
+            <button id="search-btn">
+                <i class="fas fa-search"></i>
+            </button>
+            <button id="cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+            </button>
+            <button id="menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <div class="search-form">
+            <input type="text" class="search-input" id="search-box" placeholder="Search">
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="cart-items-container">
+            <div class="cart-item">
+                <i class="fas fa-times"></i>
+                <img src="./image/pngwing.com (1).png" alt="menu">
+                <div class="content">
+                    <h3>cart item 01</h3>
+                    <div class="price">$15.99 </div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <i class="fas fa-times"></i>
+                <img src="./image/pngwing.com (2).png" alt="menu">
+                <div class="content">
+                    <h3>cart item 02</h3>
+                    <div class="price">$16.99 </div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <i class="fas fa-times"></i>
+                <img src="./image/pngwing.com (3).png" alt="menu">
+                <div class="content">
+                    <h3>cart item 03</h3>
+                    <div class="price">$13.99 </div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <i class="fas fa-times"></i>
+                <img src="./image/pngwing.com (4).png" alt="menu">
+                <div class="content">
+                    <h3>cart item 04</h3>
+                    <div class="price">$12.99 </div>
+                </div>
+            </div>
+            <a href="#" class="btn">check out </a>
+        </div>
+    </header>
+<!-- -------------------------------------------HEADER SECTION -->
+<!-- -------------------------------------------REVIEW SECTION -->
+<section class="review" id="review">
+    <h1 class="heading">customer's <span>review</span> </h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="./image/pngwing.com (8).png" alt="quote">
+            <p> Dicta totam suscipit vero praesentium excepturi facilis, fuga at architecto dolor tempora molestias quam dignissimos sit. Molestiae temporibus ratione quas placeat possimus!</p>
+            <img src="./image/pngwing.com (9).png" alt="customer-avatar" class="user">
+            <h3>Patrick Hellinger</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+        <div class="box">
+            <img src="./image/pngwing.com (8).png" alt="quote">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga at architecto dolor tempora molestias quam dignissimos sit. Molestiae temporibus ratione quas placeat possimus!</p>
+            <img src="./image/pngwing.com (10).png" alt="customer-avatar" class="user">
+            <h3>Serena Williams</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+        <div class="box">
+            <img src="./image/pngwing.com (8).png" alt="quote">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta totam suscipit vero praesentium excepturi facilis, fuga at architecto dolor tempora molestias quam dignissimos possimus!</p>
+            <img src="./image/pngwing.com (11).png" alt="customer-avatar" class="user">
+            <h3>Helen Marksen</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
     </div>
+</section> 
+<!-- -------------------------------------------REVIEW SECTION -->
+
+<!-- -------------------------------------------FOOTER SECTION -->
+    <section class="footer">
+        <div class="search">
+            <input type="text" class="search-input" placeholder="Search">
+            <button class="btn btn-primary">search</button>
+        </div>
+        <div class="share">
+            <a href="#" class="fab fa-facebook"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+        </div>
+        <div class="links">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#menu">menu</a>
+            <a href="#products">products</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+            <a href="#blog">blog</a>
+        </div>
+        <div class="credit">
+            creaated by <span>Nizami Sevindi</span> | all rights reserved!
+        </div>
+    </section>
+    <!-- -------------------------------------------FOOTER SECTION -->
+
+<script src="./script.js"></script>
+
 </body>
 </html>
